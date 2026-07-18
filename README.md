@@ -50,13 +50,19 @@ GitHub
 
 ## Project Structure
 Customer-Churn-Analysis/
+
 data/
     raw/
     processed/
+    
 notebooks/
+
 reports/
+
 images/
+
 README.md
+
 requirements.txt
 
 ## Methodology
