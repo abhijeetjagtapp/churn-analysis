@@ -153,7 +153,7 @@ GitHub
 ## How to Run
 git clone ...
 
-cd Customer-Churn-Analysis
+cd churn-analysis
 
 pip install -r requirements.txt
 
