@@ -133,37 +133,6 @@ GitHub
 | Escalation Rate | Escalated complaints |
 | Average Complaints | Complaints per customer |
 
-Raw Data
-    │
-    ▼
-Data Cleaning
-    │
-    ▼
-Feature Engineering
-    │
-    ▼
-Data Merging
-    │
-    ▼
-Exploratory Data Analysis
-    │
-    ▼
-Pivot Tables
-    │
-    ▼
-Matplotlib Visualizations
-    │
-    ▼
-Seaborn Visualizations
-    │
-    ▼
-Business Insights
-    │
-    ▼
-Recommendations
-
-
-
 ## Recommendations
 
 - Improve onboarding for Basic plan customers.
@@ -189,32 +158,6 @@ cd Customer-Churn-Analysis
 pip install -r requirements.txt
 
 jupyter notebook
-
-Customer-Churn-Analysis/
-│
-├── data/
-│   ├── raw/
-│   └── processed/
-│
-├── notebooks/
-│   ├── 01_data_import.ipynb
-│   ├── 02_data_cleaning.ipynb
-│   ├── 03_feature_engineering.ipynb
-│   ├── 04_eda.ipynb
-│   ├── 05_visualization_matplotlib.ipynb
-│   ├── 06_visualization_seaborn.ipynb
-│   └── 07_business_insights.ipynb
-│
-├── images/
-│   ├── churn_monthly.png
-│   ├── churn_by_plan.png
-│   ├── churn_subscription.png
-│   ├── correlation_heatmap.png
-│   └── pivot_tables.png
-│
-├── requirements.txt
-├── README.md
-└── LICENSE
 
 ## Author
 
