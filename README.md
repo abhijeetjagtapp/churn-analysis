@@ -26,7 +26,6 @@ A subscription business wants to understand:
 - Create visualizations
 - Generate actionable business insights
 
-
 ## Dataset
 
 The analysis uses three datasets:
@@ -48,53 +47,121 @@ Jupyter Notebook
 Git
 GitHub
 
-## Project Structure
-Customer-Churn-Analysis/
+## 📌 Methodology
 
-data/
-    raw/
-    processed/
-    
-notebooks/
+### 1. Data Collection
+- Imported customer, subscription, and support datasets
+- Inspected tables and data types
 
-reports/
-
-images/
-
-README.md
-
-requirements.txt
-
-## Methodology
-
-### Data Cleaning
-
+### 2. Data Cleaning
 - Removed unnecessary columns
-- Renamed inconsistent column names
-- Standardized values
+- Renamed columns for consistency
 - Handled missing values
-- Converted data types
+- Corrected data types
+- Standardized categorical values
 
-### Feature Engineering
-
+### 3. Feature Engineering
 - Created Churn Flag
-- Merged datasets
 - Calculated Complaint Count
-- Removed duplicate records
+- Merged datasets using left joins
+- Removed duplicate support records
+- Created analytical dataset
 
-### Exploratory Data Analysis
-
+### 4. Exploratory Data Analysis
 - Churn Rate
 - Retention Rate
-- Revenue Analysis
-- Customer Tenure
-- Complaint Analysis
-- Escalation Analysis
+- Average Revenue
+- Average Customer Tenure
+- Revenue at Risk
+- Escalation Rate
+- Average Complaints
 - Correlation Analysis
+
+### 5. Data Visualization
+- Matplotlib
+- Seaborn
+- Heatmaps
+- Pivot Tables
+
+## 📈 Visualizations
+
+### Matplotlib
+
+- Monthly Churn Trend
+- Churn by Plan Type
+- Churn by Subscription Type
+
+### Seaborn
+
+- Correlation Heatmap
+- Distribution Plots
+- Count Plots
+
+### Pivot Tables
+
+- Churn by Plan
+- Churn by Subscription
+- Complaint Analysis
+
+
+
+## ✨ Key Features
+
+- Data Cleaning
+- Feature Engineering
+- Exploratory Data Analysis
+- Business KPI Calculation
+- Pivot Table Analysis
+- Correlation Analysis
+- Seaborn Visualizations
+- Matplotlib Visualizations
+- Business Recommendations
 
 ## Key Insights
 
 <img width="1259" height="546" alt="image" src="https://github.com/user-attachments/assets/a2061f73-1f43-4eac-9696-d450db1b1dc6" />
+
+## 📊 Business KPIs
+
+| KPI | Description |
+|------|-------------|
+| Churn Rate | Percentage of customers who left |
+| Retention Rate | Percentage of retained customers |
+| Average Revenue | Revenue generated per customer |
+| Average Tenure | Customer lifetime |
+| Revenue at Risk | Lost revenue from churned customers |
+| Escalation Rate | Escalated complaints |
+| Average Complaints | Complaints per customer |
+
+Raw Data
+    │
+    ▼
+Data Cleaning
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
+Data Merging
+    │
+    ▼
+Exploratory Data Analysis
+    │
+    ▼
+Pivot Tables
+    │
+    ▼
+Matplotlib Visualizations
+    │
+    ▼
+Seaborn Visualizations
+    │
+    ▼
+Business Insights
+    │
+    ▼
+Recommendations
+
 
 
 ## Recommendations
@@ -123,6 +190,31 @@ pip install -r requirements.txt
 
 jupyter notebook
 
+Customer-Churn-Analysis/
+│
+├── data/
+│   ├── raw/
+│   └── processed/
+│
+├── notebooks/
+│   ├── 01_data_import.ipynb
+│   ├── 02_data_cleaning.ipynb
+│   ├── 03_feature_engineering.ipynb
+│   ├── 04_eda.ipynb
+│   ├── 05_visualization_matplotlib.ipynb
+│   ├── 06_visualization_seaborn.ipynb
+│   └── 07_business_insights.ipynb
+│
+├── images/
+│   ├── churn_monthly.png
+│   ├── churn_by_plan.png
+│   ├── churn_subscription.png
+│   ├── correlation_heatmap.png
+│   └── pivot_tables.png
+│
+├── requirements.txt
+├── README.md
+└── LICENSE
 
 ## Author
 
